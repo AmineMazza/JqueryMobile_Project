@@ -1,303 +1,309 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Projet-Mobile</title>
 
-        <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-        <link rel="stylesheet" href="css/themes/my-custom-theme.css" />
-        <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
-        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-        <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet-Mobile</title>
 
-        <link rel="stylesheet" href="test.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    </head>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="css/themes/my-custom-theme.css" />
+    <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
-    <body>
 
-        <!-- Page 1 -->
-        <div data-role="page" id="page1">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+</head>
 
-            <div data-role="header" style="background-color: cornflowerblue; color: white;">
-                <h1 class=" h1 ">Home Page</h1>
+<body>
 
-                <a href="#panel" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext"  style="background-color: cornflowerblue; color: white;"></a>
-                <!-- <a href="#user" data-transition="pop"class="ui-btn ui-icon-user ui-btn-b ui-btn-icon-notext ui-btn-corner-all "></a> -->
+    <!-- Page 1 -->
+    <div data-role="page" id="page1">
 
-                <div data-role="navbar">
-                    <ul>
-                        <li><a href="#page3"
-                                class="ui-btn ui-icon-carat-d ui-btn-a ui-btn-icon-left ui-btn-corner-all">Villes</a></li>
-                        <li><a href="#" class="ui-btn ui-icon-carat-d ui-btn-a ui-btn-icon-left ui-btn-corner-all">Places
-                                Populaires</a></li>
-                        <li><a href="#page5"
-                                class="ui-btn ui-icon-carat-d ui-btn-a ui-btn-icon-left ui-btn-corner-all">
-                                Sondage</a></li>
-                        <li><a href="#page4"
-                                class="ui-btn ui-icon-carat-d ui-btn-a ui-btn-icon-left ui-btn-corner-all">Voyage Organisé</a></li>
+        <div data-role="header" style="background-color: cornflowerblue; color: white;">
+            <h1 class=" h1 ">Home Page</h1>
 
-                    </ul>
-                </div>
-            </div>
-            <!-- Panel dans header  -->
-            <div data-role="panel" id="panel">
-                <!-- Pour afficher le text et icon : il faut préciser l'endroit de l'icon (ui-btn-icon-left)-->
-                <a href="#page1" class="ui-btn ui-icon-home ui-btn-b ui-btn-icon-left ui-btn-corner-all">Home</a><br>
-                <a href="#page3" class="ui-btn ui-icon-location ui-btn-b ui-btn-icon-left ui-btn-corner-all">Villes</a><br>
-                <a href="" class="ui-btn ui-icon-home ui-btn-b ui-btn-icon-left ui-btn-corner-all">Hotèles</a><br>
-                <a href="#page4" class="ui-btn ui-icon-home ui-btn-b ui-btn-icon-left ui-btn-corner-all">Résterents</a><br>
-            </div>
-            <div data-role="main" class="ui-content">
-                <!-- Contenu -->
+            <a href="#panel" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext"
+                style="background-color: cornflowerblue; color: white;"></a>
+            <!-- <a href="#user" data-transition="pop"class="ui-btn ui-icon-user ui-btn-b ui-btn-icon-notext ui-btn-corner-all "></a> -->
 
-                <form class="ui-filterable">
-                        <input id="autocomplete-input" data-type="search" placeholder="Search ...">
-                </form>
-                <ul data-role="listview" data-filter="true" data-filter-reveal="true" data-input="#autocomplete-input" data-inset="true">
-                        <li><a href="#">Hotel</a></li>
-                        <li><a href="#">Restaurants</a></li>
-                        <li><a href="#">Villes</a></li>
-                        <li><a href="#">Monuments Historiques</a></li>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#page3"
+                            class="ui-btn ui-icon-carat-d ui-btn-a ui-btn-icon-left ui-btn-corner-all">Villes</a></li>
+                    <li><a href="#" class="ui-btn ui-icon-carat-d ui-btn-a ui-btn-icon-left ui-btn-corner-all">Places
+                            Populaires</a></li>
+                    <li><a href="#page5" class="ui-btn ui-icon-carat-d ui-btn-a ui-btn-icon-left ui-btn-corner-all">
+                            Sondage</a></li>
+                    <li><a href="#page4"
+                            class="ui-btn ui-icon-carat-d ui-btn-a ui-btn-icon-left ui-btn-corner-all">Voyage
+                            Organisé</a></li>
+
                 </ul>
-                <div class="wrapper">
-                    <h2>Places :</h2>
-                    <div class="carousel owl-carousel">
-                        <div class="card card-1">
-                            <img src="img\marrakech.jpg" alt="" ><br>   
-                        </div>
-                        <div class="card card-2">
-                            <img src="img\casablanca.jpg" alt=""><br>
-                        </div>
-                        <div class="card card-3">
-                            <img src="img\agadir.jpg" alt=""><br>
-                        </div>
-                        <div class="card card-4">
-                            <img src="img\marrakech.jpg" alt="" ><br> 
-                        </div>
-                        <div class="card card-5">
-                            <img src="img\casablanca.jpg" alt=""><br>
-                        </div>
+            </div>
+        </div>
+        <!-- Panel dans header  -->
+        <div data-role="panel" id="panel">
+            <!-- Pour afficher le text et icon : il faut préciser l'endroit de l'icon (ui-btn-icon-left)-->
+            <a href="#page1" class="ui-btn ui-icon-home ui-btn-b ui-btn-icon-left ui-btn-corner-all">Home</a><br>
+            <a href="#page3" class="ui-btn ui-icon-location ui-btn-b ui-btn-icon-left ui-btn-corner-all">Villes</a><br>
+            <a href="" class="ui-btn ui-icon-home ui-btn-b ui-btn-icon-left ui-btn-corner-all">Hotèles</a><br>
+            <a href="#page4" class="ui-btn ui-icon-home ui-btn-b ui-btn-icon-left ui-btn-corner-all">Résterents</a><br>
+        </div>
+        <div data-role="main" class="ui-content">
+            <!-- Contenu -->
+
+            <form class="ui-filterable">
+                <input id="autocomplete-input" data-type="search" placeholder="Search ...">
+            </form>
+            <ul data-role="listview" data-filter="true" data-filter-reveal="true" data-input="#autocomplete-input"
+                data-inset="true">
+                <li><a href="#">Hotel</a></li>
+                <li><a href="#">Restaurants</a></li>
+                <li><a href="#">Villes</a></li>
+                <li><a href="#">Monuments Historiques</a></li>
+            </ul>
+            <div class="wrapper">
+                <h2>Places :</h2>
+                <div class="carousel owl-carousel">
+                    <div class="card card-1">
+                        <img src="img\marrakech.jpg" alt=""><br>
+                    </div>
+                    <div class="card card-2">
+                        <img src="img\casablanca.jpg" alt=""><br>
+                    </div>
+                    <div class="card card-3">
+                        <img src="img\agadir.jpg" alt=""><br>
+                    </div>
+                    <div class="card card-4">
+                        <img src="img\marrakech.jpg" alt=""><br>
+                    </div>
+                    <div class="card card-5">
+                        <img src="img\casablanca.jpg" alt=""><br>
                     </div>
                 </div>
+            </div>
 
-                <h2>Catégories :</h2>
-                <ul data-role="listview" data-inset="true">
-                    <li>
-                        <a href="#">
+            <h2>Catégories :</h2>
+            <ul data-role="listview" data-inset="true">
+                <li>
+                    <a href="#">
                         <img src="img\hotel.jpg">
                         <h2>Hôtels</h2>
-                        <p>Voir Plus</p></a>
-                    </li>
-                    <li>
-                        <a href="#">
+                        <p>Voir Plus</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
                         <img src="img\monuments.jpg">
                         <h2>Monuments Historiques</h2>
-                        <p>Voir Plus</p></a>
-                    </li>
-                    <li>
-                        <a href="#">
+                        <p>Voir Plus</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
                         <img src="img\restaurant.jpg">
                         <h2>Restaurants</h2>
-                        <p>Voir Plus</p></a>
-                    </li>
-                </ul>
+                        <p>Voir Plus</p>
+                    </a>
+                </li>
+            </ul>
 
-                
-                <div>
-                    <h2>Voyages Organisé :</h2>
-                    <h3>Marrakech</h3>
-                    <img src="img\marrakech.jpg" alt="" style="height: 250px; width: 350px;"><br>
-                    <a href="#page4" data-transition="turn" class="ui-btn ui-btn-inline ui-btn-b">Réserver</a>
 
-                    <h3>Casablanca</h3>
-                    <img src="img\casablanca.jpg" alt="" style="height: 250px; width: 350px;"><br>
-                    <a href="#page4" data-transition="turn" class="ui-btn ui-btn-inline ui-btn-b">Réserver</a>
+            <div>
+                <h2>Voyages Organisé :</h2>
+                <h3>Marrakech</h3>
+                <img src="img\marrakech.jpg" alt="" style="height: 250px; width: 350px;"><br>
+                <a href="#page4" data-transition="turn" class="ui-btn ui-btn-inline ui-btn-b">Réserver</a>
 
-                    <h3>Agadir</h3>
-                    <img src="img\agadir.jpg" alt="" style="height: 250px; width: 350px;"><br>
-                    <a href="#page4" data-transition="turn" class="ui-btn ui-btn-inline ui-btn-b">Réserver</a>
+                <h3>Casablanca</h3>
+                <img src="img\casablanca.jpg" alt="" style="height: 250px; width: 350px;"><br>
+                <a href="#page4" data-transition="turn" class="ui-btn ui-btn-inline ui-btn-b">Réserver</a>
 
-                </div>
-                <script>
-                    $(".carousel").owlCarousel({
+                <h3>Agadir</h3>
+                <img src="img\agadir.jpg" alt="" style="height: 250px; width: 350px;"><br>
+                <a href="#page4" data-transition="turn" class="ui-btn ui-btn-inline ui-btn-b">Réserver</a>
+
+            </div>
+            <script>
+                $(".carousel").owlCarousel({
                     margin: 20,
                     loop: true,
                     autoplay: true,
                     autoplayTimeout: 2000,
                     autoplayHoverPause: true,
                     responsive: {
-                        0:{
-                        items:1,
-                        nav: false
+                        0: {
+                            items: 1,
+                            nav: false
                         },
-                        600:{
-                        items:2,
-                        nav: false
+                        600: {
+                            items: 2,
+                            nav: false
                         },
-                        1000:{
-                        items:3,
-                        nav: false
+                        1000: {
+                            items: 3,
+                            nav: false
                         }
                     }
-                    });
-                </script>
-                <!-- /Contenu -->
-            </div>
-            <div data-role="footer" style="background-color: cornflowerblue; color: white;">
-                <h1>Footer</h1>
-            </div>
+                });
+            </script>
+            <!-- /Contenu -->
         </div>
-
-        <!-- Page 2 -->
-        <div data-role="page" id="page2" data-dialog="true">
-            <div data-role="header" style="background-color: cornflowerblue; color: white;">
-                <h1>Welcome to Page 2 'Cart'</h1>
-                <a href="#page1" class="ui-btn ui-btn-right ui-corner-all ui-icon-home ui-btn-icon-notext">Home</a>
-
-
-            </div>
-            <div data-role="main" class="ui-content">
-                <p>Afrique</p>
-                <p>Maroc</p>
-                <p>Marrakech</p>
-                <a href="#page1" data-transition="pop">go back to page 1</a>
-
-
-            </div>
-            <div data-role="footer" style="background-color: cornflowerblue; color: white;">
-                <h1>Footer 2</h1>
-            </div>
+        <div data-role="footer" style="background-color: cornflowerblue; color: white;">
+            <h1>Footer</h1>
         </div>
+    </div>
 
-        <!-- Page 3 -->
-        <div data-role="page" id="page3" data-dialog="true">
-            <div data-role="header" style="background-color: cornflowerblue; color: white;">
-                <h1>Welcome to Page 3:Villes</h1>
-                <a href="#page1" class="ui-btn ui-btn-right ui-corner-all ui-icon-home ui-btn-icon-notext">Home</a>
+    <!-- Page 2 -->
+    <div data-role="page" id="page2" data-dialog="true">
+        <div data-role="header" style="background-color: cornflowerblue; color: white;">
+            <h1>Welcome to Page 2 'Cart'</h1>
+            <a href="#page1" class="ui-btn ui-btn-right ui-corner-all ui-icon-home ui-btn-icon-notext">Home</a>
 
 
-            </div>
-            <div data-role="main" class="ui-content">
-                <ul>
-                    <p><a href=""> Marrakech</a> </p>
-                    <p><a href=""> Casablanca</a> </p>
-                    <p><a href=""> Agadir</a> </p>
-                    <p><a href=""> Tanger</a> </p>
-                    <p><a href=""> Tetouane</a> </p>
-                </ul>
-                <!-- <a href="#page1" data-transition="pop"> back to Home</a> -->
-
-            </div>
-            <div data-role="footer" style="background-color: cornflowerblue; color: white;">
-                <h1>Footer 3</h1>
-            </div>
         </div>
-
-        <!-- Page 4 : reservation -->
-        <div data-role="page" id="page4" data-dialog="true">
-            <div data-role="header" style="background-color: cornflowerblue; color: white;">
-                <h1>Reservation</h1>
-                <a href="#page1" class="ui-btn ui-btn-right ui-corner-all ui-icon-home ui-btn-icon-notext">Home</a>
-            </div>
-            <div data-role="main" class="ui-content">
-                <form action="" method="getvb">
-                    <label for="ville" class="select">Choisir une Ville:</label>
-                    <select name="ville" id="ville" data-native-menu="false">
-                        <option>Ville :</option>
-                        <option value="marrakech">Marrakech</option>
-                        <option value="casa">Casablanca</option>
-                        <option value="agadir">Agadir</option>
-                    </select>
-
-                    <label for="prenom">Votre Prénom :</label>
-                    <input type="text" name="prenom" id="prenom" placeholder="Prénom" value="">
-
-                    <label for="nom">Votre Nom :</label>
-                    <input type="text" name="nom" id="nom" placeholder="Nom" value="">
-
-                    <label for="tel">Telephone:</label>
-                    <input type="tel" name="tel" id="tel" placeholder="+212693399476" value="">
-
-                    <label for="Email">Votre Email :</label>
-                    <input type="text" name="Email" id="Email" placeholder="amine@gmail.com" value="">
-
-                    <label for="personnes">Combien de perssones :</label>
-                    <input type="number" name="number" pattern="[0-9]*" id="personnes" placeholder="2" value="">
+        <div data-role="main" class="ui-content">
+            <p>Afrique</p>
+            <p>Maroc</p>
+            <p>Marrakech</p>
+            <a href="#page1" data-transition="pop">go back to page 1</a>
 
 
-                    <label for="propos">Proposition:</label>
-                    <input type="text" name="propos" id="propos" placeholder="Votre Proposition" value="">
+        </div>
+        <div data-role="footer" style="background-color: cornflowerblue; color: white;">
+            <h1>Footer 2</h1>
+        </div>
+    </div>
+
+    <!-- Page 3 -->
+    <div data-role="page" id="page3" data-dialog="true">
+        <div data-role="header" style="background-color: cornflowerblue; color: white;">
+            <h1>Welcome to Page 3:Villes</h1>
+            <a href="#page1" class="ui-btn ui-btn-right ui-corner-all ui-icon-home ui-btn-icon-notext">Home</a>
 
 
-                    <!-- <a href="#page4" data-transition="turn"  class="ui-btn ui-btn-inline ui-btn-b">Reserver</a> -->
+        </div>
+        <div data-role="main" class="ui-content">
+            <ul>
+                <p><a href=""> Marrakech</a> </p>
+                <p><a href=""> Casablanca</a> </p>
+                <p><a href=""> Agadir</a> </p>
+                <p><a href=""> Tanger</a> </p>
+                <p><a href=""> Tetouane</a> </p>
+            </ul>
+            <!-- <a href="#page1" data-transition="pop"> back to Home</a> -->
+
+        </div>
+        <div data-role="footer" style="background-color: cornflowerblue; color: white;">
+            <h1>Footer 3</h1>
+        </div>
+    </div>
+
+    <!-- Page 4 : reservation -->
+    <div data-role="page" id="page4" data-dialog="true">
+        <div data-role="header" style="background-color: cornflowerblue; color: white;">
+            <h1>Reservation</h1>
+            <a href="#page1" class="ui-btn ui-btn-right ui-corner-all ui-icon-home ui-btn-icon-notext">Home</a>
+        </div>
+        <div data-role="main" class="ui-content">
+            <form action="" method="getvb">
+                <label for="ville" class="select">Choisir une Ville:</label>
+                <select name="ville" id="ville" data-native-menu="false">
+                    <option>Ville :</option>
+                    <option value="marrakech">Marrakech</option>
+                    <option value="casa">Casablanca</option>
+                    <option value="agadir">Agadir</option>
+                </select>
+
+                <label for="prenom">Votre Prénom :</label>
+                <input type="text" name="prenom" id="prenom" placeholder="Prénom" value="">
+
+                <label for="nom">Votre Nom :</label>
+                <input type="text" name="nom" id="nom" placeholder="Nom" value="">
+
+                <label for="tel">Telephone:</label>
+                <input type="tel" name="tel" id="tel" placeholder="+212693399476" value="">
+
+                <label for="Email">Votre Email :</label>
+                <input type="text" name="Email" id="Email" placeholder="amine@gmail.com" value="">
+
+                <label for="personnes">Combien de perssones :</label>
+                <input type="number" name="number" pattern="[0-9]*" id="personnes" placeholder="2" value="">
+
+
+                <label for="propos">Proposition:</label>
+                <input type="text" name="propos" id="propos" placeholder="Votre Proposition" value="">
+
+
+                <!-- <a href="#page4" data-transition="turn"  class="ui-btn ui-btn-inline ui-btn-b">Reserver</a> -->
+                <input type="submit" value="Submit">
+                <a href="#page1" data-transition="turn" class="ui-btn ui-btn-inline ui-btn-c">Go back</a>
+
+
+            </form>
+        </div>
+        <div data-role="footer" style="background-color: cornflowerblue; color: white;">
+            <h1>Footer 2</h1>
+        </div>
+    </div>
+
+    <!-- Page 5 : Proposition voyages -->
+    <div data-role="page" id="page5" data-dialog="true">
+        <div data-role="header" style="background-color: cornflowerblue; color: white;">
+            <h1>Welcome to Propositions</h1>
+            <a href="#page1" class="ui-btn ui-corner-all ui-icon-delete ui-btn-icon-notext">Home</a>
+
+        </div>
+        <div data-role="main" class="ui-content">
+            <!--  content -->
+            <div>
+                <h1>Marrakech</h1>
+                <img src="img\marrakech.jpg" alt="" style="height: 250px; width: 320px;"><br>
+                <fieldset data-role="controlgroup">
+                    <legend>Votre proposition :</legend>
+                    <input type="radio" name="radio-choice-1" id="radio-choice-1" value="choice-1" checked="checked">
+                    <label for="radio-choice-1">Je veux</label>
+                    <input type="radio" name="radio-choice-1" id="radio-choice-2" value="choice-2">
+                    <label for="radio-choice-2">Je veux pas</label>
+
                     <input type="submit" value="Submit">
-                    <a href="#page1" data-transition="turn" class="ui-btn ui-btn-inline ui-btn-c">Go back</a>
-
-
-                </form>
+                </fieldset>
             </div>
-            <div data-role="footer" style="background-color: cornflowerblue; color: white;">
-                <h1>Footer 2</h1>
-            </div>
+
         </div>
-
-        <!-- Page 5 : Proposition voyages -->
-        <div data-role="page" id="page5" data-dialog="true">
-            <div data-role="header" style="background-color: cornflowerblue; color: white;">
-                <h1>Welcome to Propositions</h1>
-                <a href="#page1" class="ui-btn ui-corner-all ui-icon-delete ui-btn-icon-notext">Home</a>
-
-            </div>
-            <div data-role="main" class="ui-content">
-                <!--  content -->
-                <div>
-                    <h1>Marrakech</h1>
-                    <img src="img\marrakech.jpg" alt="" style="height: 250px; width: 320px;"><br>
-                    <fieldset data-role="controlgroup">
-                        <legend>Votre proposition :</legend>
-                        <input type="radio" name="radio-choice-1" id="radio-choice-1" value="choice-1" checked="checked">
-                        <label for="radio-choice-1">Je veux</label>
-                        <input type="radio" name="radio-choice-1" id="radio-choice-2" value="choice-2">
-                        <label for="radio-choice-2">Je veux pas</label>
-                        
-                        <input type="submit" value="Submit">
-                    </fieldset>
-                </div>
-
-            </div>
-            <div data-role="footer" style="background-color: cornflowerblue; color: white;">
-                <h1>Footer 2</h1>
-            </div>
+        <div data-role="footer" style="background-color: cornflowerblue; color: white;">
+            <h1>Footer 2</h1>
         </div>
+    </div>
 
-        <!--User  -->
-        <div data-role="page" id="user" data-dialog="true">
-            <div data-role="header" style="background-color: cornflowerblue; color: white;">
-                <h1>header</h1>
+    <!--User  -->
+    <div data-role="page" id="user" data-dialog="true">
+        <div data-role="header" style="background-color: cornflowerblue; color: white;">
+            <h1>header</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+            <div>
+                <h1 style="margin-top: 25px;">Welcome Amine</h1>
+                <li>Role : User</li>
+                <li>Email : Amine@gmail.com</li>
+                <li>Tel : 0693399476</li>
             </div>
-            <div data-role="main" class="ui-content">
-                <div>
-                    <h1 style="margin-top: 25px;">Welcome Amine</h1>
-                    <li>Role : User</li>
-                    <li>Email : Amine@gmail.com</li>
-                    <li>Tel : 0693399476</li>
-                </div>
-                <div class="img">
-                    <img src="/Amine-Portfolio/img/2022_08_13_20_14_IMG_1536.JPG" style="height: 150px; width: 150px;
+            <div class="img">
+                <img src="/Amine-Portfolio/img/2022_08_13_20_14_IMG_1536.JPG" style="height: 150px; width: 150px;
                     margin-left: 240px; margin-top: -500px;
                     border-radius: 50%;" alt="profil">
-                </div>
-            </div>
-            <div data-role="footer" style="background-color: cornflowerblue; color: white;">
-                <!-- <h1>Footer</h1> -->
             </div>
         </div>
+        <div data-role="footer" style="background-color: cornflowerblue; color: white;">
+            <!-- <h1>Footer</h1> -->
+        </div>
+    </div>
 
-    </body>
+</body>
 
 </html>
